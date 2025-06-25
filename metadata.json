@@ -1,0 +1,6 @@
+{
+  "name": "Manufacturing Yield Optimizer",
+  "description": "An application to analyze manufacturing batch data, identify factors affecting yield, and predict future yield based on operational parameters using AI.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

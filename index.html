@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERE AND NOW AI - Manufacturing Yield Optimizer</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/logos/favicon-logo-with-name.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --brand-primary: #FFDF00; /* Golden Yellow */
+      --brand-secondary: #004040; /* Dark Teal */
+      --brand-text-on-primary: #002020; /* Dark Teal for text on primary background */
+      --brand-text-on-secondary: #E0F2F1; /* Light Teal/White for text on secondary background */
+      --brand-text-on-secondary-muted: #B2DFDB; /* Muted light teal for less important text */
+      --brand-primary-darker: #E6C600; /* Slightly darker yellow for hover effects */
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--brand-secondary);
+      color: var(--brand-text-on-secondary);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--brand-primary); 
+      border-radius: 4px;
+      border: 2px solid var(--brand-secondary);
+    }
+    ::-webkit-scrollbar-track {
+      background-color: var(--brand-secondary); 
+    }
+    .main-container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1rem; /* p-4 */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[var(--brand-secondary)] text-[var(--brand-text-on-secondary)]">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
